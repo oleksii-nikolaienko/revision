@@ -1,3 +1,24 @@
+According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
+
+[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
+[bumphunterEngine] Estimating p-values and FWER.
+[bumphunterEngine] Computing coefficients.
+[bumphunterEngine] Smoothing coefficients.
+<< Calculate DMR success. >>
+Bumphunter detected 71 DMRs with P value <= 0.05.
+
+[ Section 2:  Run DMR Algorithm Done ]
+
+[<<<<<< ChAMP.DMR END >>>>>>]
+[===========================]
+[You may want to process DMR.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
 
   You pheno is numeric type.
     Your pheno information contains following groups. >>
@@ -18,9 +39,11 @@ According to your data set, champ.DMR() detected 23666 clusters contains MORE TH
 [bumphunterEngine] Computing coefficients.
 [bumphunterEngine] Smoothing coefficients.
 [bumphunterEngine] Performing 100 bootstraps.
+[bumphunterEngine] Computing marginal bootstrap p-values.
+[bumphunterEngine] Smoothing bootstrap coefficients.
 [bumphunterEngine] Estimating p-values and FWER.
 << Calculate DMR success. >>
-Bumphunter detected 66 DMRs with P value <= 0.05.
+Bumphunter detected 75 DMRs with P value <= 0.05.
 
 [ Section 2:  Run DMR Algorithm Done ]
 
@@ -28,19 +51,165 @@ Bumphunter detected 66 DMRs with P value <= 0.05.
 [===========================]
 [You may want to process DMR.GUI() or champ.GSEA() next.]
 
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Find DMR with Bumphunter Method >>
+1 cores will be used to do parallel Bumphunter computing.
+[bumphunterEngine] Estimating p-values and FWER.
+According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
+
+<< Calculate DMR success. >>
+Bumphunter detected 77 DMRs with P value <= 0.05.
+
+[ Section 2:  Run DMR Algorithm Done ]
+
+[<<<<<< ChAMP.DMR END >>>>>>]
+[===========================]
+[You may want to process DMR.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
+<< Find DMR with Bumphunter Method >>
+1 cores will be used to do parallel Bumphunter computing.
+[bumphunterEngine] Computing coefficients.
+[bumphunterEngine] Smoothing coefficients.
 [bumphunterEngine] Computing marginal bootstrap p-values.
 [bumphunterEngine] Smoothing bootstrap coefficients.
+[bumphunterEngine] Performing 100 bootstraps.
+According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
+
+[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
+[bumphunterEngine] Computing coefficients.
+[bumphunterEngine] Smoothing coefficients.
 [bumphunterEngine] Computing marginal bootstrap p-values.
 [bumphunterEngine] Smoothing bootstrap coefficients.
+[bumphunterEngine] Performing 100 bootstraps.
+[bumphunterEngine] cutoff: 0.641
+[bumphunterEngine] Finding regions.
+[bumphunterEngine] Found 1390 bumps.
+[bumphunterEngine] Computing regions for each bootstrap.
 [bumphunterEngine] Computing marginal bootstrap p-values.
 [bumphunterEngine] Smoothing bootstrap coefficients.
 [bumphunterEngine] cutoff: 0.64
 [bumphunterEngine] Finding regions.
-[bumphunterEngine] Found 1302 bumps.
+[bumphunterEngine] Found 1394 bumps.
 [bumphunterEngine] Computing regions for each bootstrap.
-[bumphunterEngine] cutoff: 0.642
+[bumphunterEngine] Computing marginal bootstrap p-values.
+[bumphunterEngine] Smoothing bootstrap coefficients.
+[bumphunterEngine] Estimating p-values and FWER.
+<< Calculate DMR success. >>
+Bumphunter detected 68 DMRs with P value <= 0.05.
+
+[ Section 2:  Run DMR Algorithm Done ]
+
+[<<<<<< ChAMP.DMR END >>>>>>]
+[===========================]
+[You may want to process DMR.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Find DMR with Bumphunter Method >>
+1 cores will be used to do parallel Bumphunter computing.
+[bumphunterEngine] cutoff: 0.641
 [bumphunterEngine] Finding regions.
-[bumphunterEngine] Found 1390 bumps.
+[bumphunterEngine] Found 1304 bumps.
+[bumphunterEngine] Computing regions for each bootstrap.
+According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
+
+[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
+[bumphunterEngine] Computing coefficients.
+[bumphunterEngine] Smoothing coefficients.
+[bumphunterEngine] Performing 100 bootstraps.
+[bumphunterEngine] Estimating p-values and FWER.
+<< Calculate DMR success. >>
+Bumphunter detected 59 DMRs with P value <= 0.05.
+
+[ Section 2:  Run DMR Algorithm Done ]
+
+[<<<<<< ChAMP.DMR END >>>>>>]
+[===========================]
+[You may want to process DMR.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Find DMR with Bumphunter Method >>
+1 cores will be used to do parallel Bumphunter computing.
+According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
+
+[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
+[bumphunterEngine] Computing coefficients.
+[bumphunterEngine] Smoothing coefficients.
+[bumphunterEngine] Performing 100 bootstraps.
+[bumphunterEngine] cutoff: 0.641
+[bumphunterEngine] Finding regions.
+[bumphunterEngine] Computing marginal bootstrap p-values.
+[bumphunterEngine] Found 1374 bumps.
+[bumphunterEngine] Computing regions for each bootstrap.
+[bumphunterEngine] Smoothing bootstrap coefficients.
+[bumphunterEngine] cutoff: 0.634
+[bumphunterEngine] Finding regions.
+[bumphunterEngine] Found 1386 bumps.
 [bumphunterEngine] Computing regions for each bootstrap.
 [bumphunterEngine] Estimating p-values and FWER.
 << Calculate DMR success. >>
@@ -52,30 +221,6 @@ Bumphunter detected 56 DMRs with P value <= 0.05.
 [===========================]
 [You may want to process DMR.GUI() or champ.GSEA() next.]
 
-[bumphunterEngine] cutoff: 0.642
-[bumphunterEngine] Finding regions.
-[bumphunterEngine] Found 1344 bumps.
-[bumphunterEngine] Computing regions for each bootstrap.
-[bumphunterEngine] Estimating p-values and FWER.
-<< Calculate DMR success. >>
-Bumphunter detected 72 DMRs with P value <= 0.05.
-
-[ Section 2:  Run DMR Algorithm Done ]
-
-[<<<<<< ChAMP.DMR END >>>>>>]
-[===========================]
-[You may want to process DMR.GUI() or champ.GSEA() next.]
-
-[bumphunterEngine] Estimating p-values and FWER.
-<< Calculate DMR success. >>
-Bumphunter detected 67 DMRs with P value <= 0.05.
-
-[ Section 2:  Run DMR Algorithm Done ]
-
-[<<<<<< ChAMP.DMR END >>>>>>]
-[===========================]
-[You may want to process DMR.GUI() or champ.GSEA() next.]
-
 [===========================]
 [<<<<< ChAMP.DMR START >>>>>]
 -----------------------------
@@ -100,151 +245,6 @@ According to your data set, champ.DMR() detected 23666 clusters contains MORE TH
 [bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
 [bumphunterEngine] Computing coefficients.
 [bumphunterEngine] Smoothing coefficients.
-[bumphunterEngine] Performing 100 bootstraps.
 [bumphunterEngine] Computing marginal bootstrap p-values.
 [bumphunterEngine] Smoothing bootstrap coefficients.
-[bumphunterEngine] cutoff: 0.64
-[bumphunterEngine] Finding regions.
-[bumphunterEngine] Found 1339 bumps.
-[bumphunterEngine] Computing regions for each bootstrap.
-[bumphunterEngine] Estimating p-values and FWER.
-<< Calculate DMR success. >>
-Bumphunter detected 57 DMRs with P value <= 0.05.
-
-[ Section 2:  Run DMR Algorithm Done ]
-
-[<<<<<< ChAMP.DMR END >>>>>>]
-[===========================]
-[You may want to process DMR.GUI() or champ.GSEA() next.]
-
-[1] "22:57:26 champ.dmr.bumphunter 5"
-[===========================]
-[<<<<< ChAMP.DMR START >>>>>]
------------------------------
-!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
-
-[ Section 1:  Check Input Pheno Start ]
-
-[===========================]
-[<<<<< ChAMP.DMR START >>>>>]
------------------------------
-!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
-
-[ Section 1:  Check Input Pheno Start ]
-
-[===========================]
-[<<<<< ChAMP.DMR START >>>>>]
------------------------------
-!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
-
-[ Section 1:  Check Input Pheno Start ]
-
-[===========================]
-[<<<<< ChAMP.DMR START >>>>>]
------------------------------
-!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
-
-[ Section 1:  Check Input Pheno Start ]
-
-[===========================]
-[<<<<< ChAMP.DMR START >>>>>]
------------------------------
-!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
-
-[ Section 1:  Check Input Pheno Start ]
-
-  You pheno is numeric type.
-    Your pheno information contains following groups. >>
-    <0>:99 samples.
-    <1>:1 samples.
-
-[ Section 1:  Check Input Pheno Done ]
-
-
-[ Section 2:  Run DMR Algorithm Start ]
-
-  You pheno is numeric type.
-    Your pheno information contains following groups. >>
-    <1>:1 samples.
-    <0>:99 samples.
-
-[ Section 1:  Check Input Pheno Done ]
-
-
-[ Section 2:  Run DMR Algorithm Start ]
-
-  You pheno is numeric type.
-    Your pheno information contains following groups. >>
-    <0>:99 samples.
-    <1>:1 samples.
-
-[ Section 1:  Check Input Pheno Done ]
-
-
-[ Section 2:  Run DMR Algorithm Start ]
-
-  You pheno is numeric type.
-    Your pheno information contains following groups. >>
-    <0>:99 samples.
-    <1>:1 samples.
-
-[ Section 1:  Check Input Pheno Done ]
-
-
-[ Section 2:  Run DMR Algorithm Start ]
-
-Loading required package: IlluminaHumanMethylation450kanno.ilmn12.hg19
-Loading required package: IlluminaHumanMethylation450kanno.ilmn12.hg19
-Loading required package: IlluminaHumanMethylation450kanno.ilmn12.hg19
-Loading required package: IlluminaHumanMethylation450kanno.ilmn12.hg19
-  You pheno is numeric type.
-    Your pheno information contains following groups. >>
-    <0>:99 samples.
-    <1>:1 samples.
-
-[ Section 1:  Check Input Pheno Done ]
-
-
-[ Section 2:  Run DMR Algorithm Start ]
-
-Loading required package: IlluminaHumanMethylation450kanno.ilmn12.hg19
-<< Find DMR with Bumphunter Method >>
-1 cores will be used to do parallel Bumphunter computing.
-<< Find DMR with Bumphunter Method >>
-1 cores will be used to do parallel Bumphunter computing.
-<< Find DMR with Bumphunter Method >>
-1 cores will be used to do parallel Bumphunter computing.
-<< Find DMR with Bumphunter Method >>
-1 cores will be used to do parallel Bumphunter computing.
-<< Find DMR with Bumphunter Method >>
-1 cores will be used to do parallel Bumphunter computing.
-According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
-
-According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
-
-According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
-
-According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
-
-[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
-According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
-
-[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
-[bumphunterEngine] Computing coefficients.
-[bumphunterEngine] Smoothing coefficients.
-[bumphunterEngine] Computing coefficients.
-[bumphunterEngine] Smoothing coefficients.
-[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
-[bumphunterEngine] Computing coefficients.
-[bumphunterEngine] Smoothing coefficients.
-[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
-[bumphunterEngine] Computing coefficients.
-[bumphunterEngine] Smoothing coefficients.
-[bumphunterEngine] Performing 100 bootstraps.
-[bumphunterEngine] Performing 100 bootstraps.
-[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
-[bumphunterEngine] Computing coefficients.
-[bumphunterEngine] Smoothing coefficients.
-[bumphunterEngine] Performing 100 bootstraps.
-[bumphunterEngine] Performing 100 bootstraps.
 [bumphunterEngine] Performing 100 bootstraps.
