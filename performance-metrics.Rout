@@ -63815,3 +63815,49 @@ champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
 
 [ Section 3:  Match Annotation Start ]
 
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get closestProbe for each Probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
