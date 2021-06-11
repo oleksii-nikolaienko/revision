@@ -63861,3 +63861,2606 @@ champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
 
 [ Section 3:  Match Annotation Start ]
 
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+<< Get closestProbe for each Probe >>
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+<< Get closestProbe for each Probe >>
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get closestProbe for each Probe >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get closestProbe for each Probe >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get closestProbe for each Probe >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get closestProbe for each Probe >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get expend ranges for each probe >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get closestProbe for each Probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get closestProbe for each Probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get closestProbe for each Probe >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get closestProbe for each Probe >>
+<< Get closestProbe for each Probe >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get expend ranges for each probe >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get closestProbe for each Probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get closestProbe for each Probe >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+<< Get closestProbe for each Probe >>
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get closestProbe for each Probe >>
+<< Get closestProbe for each Probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get closestProbe for each Probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+<< Get closestProbe for each Probe >>
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get DMR from overlapped probes >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get closestProbe for each Probe >>
+<< Get closestProbe for each Probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get expend ranges for each probe >>
+<< Get closestProbe for each Probe >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get closestProbe for each Probe >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get closestProbe for each Probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get closestProbe for each Probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get closestProbe for each Probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get closestProbe for each Probe >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+<< Get closestProbe for each Probe >>
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get closestProbe for each Probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get closestProbe for each Probe >>
+<< Get DMR from overlapped probes >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get closestProbe for each Probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get closestProbe for each Probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get closestProbe for each Probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get closestProbe for each Probe >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get closestProbe for each Probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get expend ranges for each probe >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get closestProbe for each Probe >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get closestProbe for each Probe >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+<< Get closestProbe for each Probe >>
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+<< Get closestProbe for each Probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Get closestProbe for each Probe >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+
+[ Section 3:  Match Annotation Done ]
+
+[<<<<<< ChAMP.DMP END >>>>>>]
+[===========================]
+[You may want to process DMP.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+<< Get closestProbe for each Probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
+<< Get closestProbe for each Probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
+
+[ Section 2:  Find Numeric Vector Related CpGs Done ]
+
+
+[ Section 3:  Match Annotation Start ]
+
