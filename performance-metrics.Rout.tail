@@ -1,100 +1,100 @@
-Type 'demo()' for some demos, 'help()' for on-line help, or
-'help.start()' for an HTML browser interface to help.
-Type 'q()' to quit R.
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
 
-> # performance evaluator
-> 
-> library(GenomicRanges)
-Loading required package: stats4
-Loading required package: BiocGenerics
-Loading required package: parallel
+[ Section 1:  Check Input Pheno Start ]
 
-Attaching package: ‘BiocGenerics’
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
 
-The following objects are masked from ‘package:parallel’:
+[ Section 1:  Check Input Pheno Start ]
 
-    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
-    clusterExport, clusterMap, parApply, parCapply, parLapply,
-    parLapplyLB, parRapply, parSapply, parSapplyLB
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
 
-The following objects are masked from ‘package:stats’:
-
-    IQR, mad, sd, var, xtabs
-
-The following objects are masked from ‘package:base’:
-
-    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
-    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
-    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
-    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
-    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
-    union, unique, unsplit, which.max, which.min
-
-Loading required package: S4Vectors
-
-Attaching package: ‘S4Vectors’
-
-The following objects are masked from ‘package:base’:
-
-    expand.grid, I, unname
-
-Loading required package: IRanges
-Loading required package: GenomeInfoDb
-> library(doParallel)
-Loading required package: foreach
-Loading required package: iterators
-> library(minfi)
-Loading required package: SummarizedExperiment
-Loading required package: MatrixGenerics
-Loading required package: matrixStats
-
-Attaching package: ‘MatrixGenerics’
-
-The following objects are masked from ‘package:matrixStats’:
-
-    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
-    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
-    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
-    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
-    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
-    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
-    colWeightedMeans, colWeightedMedians, colWeightedSds,
-    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
-    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
-    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
-    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
-    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
-    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
-    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
-    rowWeightedSds, rowWeightedVars
-
-Loading required package: Biobase
-Welcome to Bioconductor
-
-    Vignettes contain introductory material; view with
-    'browseVignettes()'. To cite Bioconductor, see
-    'citation("Biobase")', and for packages 'citation("pkgname")'.
+[ Section 1:  Check Input Pheno Done ]
 
 
-Attaching package: ‘Biobase’
+[ Section 2:  Run DMR Algorithm Start ]
 
-The following object is masked from ‘package:MatrixGenerics’:
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
+    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
 
-    rowMedians
+[ Section 1:  Check Input Pheno Done ]
 
-The following objects are masked from ‘package:matrixStats’:
 
-    anyMissing, rowMedians
+[ Section 2:  Run DMR Algorithm Start ]
 
-Loading required package: Biostrings
-Loading required package: XVector
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
+<< Find DMR with ProbeLasso Method >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
 
-Attaching package: ‘Biostrings’
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
 
-The following object is masked from ‘package:base’:
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
 
-    strsplit
+--------------------------------
 
-Loading required package: bumphunter
-Loading required package: locfit
-locfit 1.5-9.4 	 2020-03-24
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get DMR from overlapped probes >>
+[===========================]
+[<<<<< ChAMP.DMP START >>>>>]
+-----------------------------
+!!! Important !!! New Modification has been made on champ.DMP(): 
+
+    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+
+    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+
+--------------------------------
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    pheno parameter contains :100 values.
+    pheno parameter ranges from 0 to 1
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
+
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+[1] "probelasso error!"
