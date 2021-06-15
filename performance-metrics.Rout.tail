@@ -1,4 +1,3 @@
-Fitting chrY...
 Demarcating regions...
 Fitting chr1...
 Done!
@@ -98,3 +97,4 @@ loading from cache
 [1] "12:55:00 lmFit + comb-p 4"
 [1] "13:48:33 lmFit + comb-p 5"
 [1] "14:42:12 lmFit + comb-p 6"
+[1] "15:35:43 lmFit + comb-p 7"
