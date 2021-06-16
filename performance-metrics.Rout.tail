@@ -1,38 +1,24 @@
-[<<<<< ChAMP.DMP START >>>>>]
------------------------------
-!!! Important !!! New Modification has been made on champ.DMP(): 
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+<< Generate Probe-level Data >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Generate DMR metadata >>
+<< Get expend ranges for each probe >>
+<< Get closestProbe for each Probe >>
+ProbeLasso detected 2 DMRs with P value <= 0.05.
 
-    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+[ Section 2:  Run DMR Algorithm Done ]
 
-    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
-
---------------------------------
-
-[ Section 1:  Check Input Pheno Start ]
-
-  You pheno is numeric type.
-    pheno parameter contains :100 values.
-    pheno parameter ranges from 0 to 1
-
-[ Section 1:  Check Input Pheno Done ]
-
-
-[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
-
-
-[ Section 3:  Match Annotation Done ]
-
-[<<<<<< ChAMP.DMP END >>>>>>]
+[<<<<<< ChAMP.DMR END >>>>>>]
 [===========================]
-[You may want to process DMP.GUI() or champ.GSEA() next.]
+[You may want to process DMR.GUI() or champ.GSEA() next.]
 
-
-[ Section 3:  Match Annotation Done ]
-
-[<<<<<< ChAMP.DMP END >>>>>>]
-[===========================]
-[You may want to process DMP.GUI() or champ.GSEA() next.]
-
+<< Get closestProbe for each Probe >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get lassoQuantileThreshold for each featureCgi >>
+<< Get expend ranges for each probe >>
+<< Get expend ranges for each probe >>
 [===========================]
 [<<<<< ChAMP.DMP START >>>>>]
 -----------------------------
@@ -55,42 +41,55 @@
 
 [ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
 
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+<< Generate Probe-level Data >>
+<< Generate DMR metadata >>
+ProbeLasso detected 1 DMRs with P value <= 0.05.
+
+[ Section 2:  Run DMR Algorithm Done ]
+
+[<<<<<< ChAMP.DMR END >>>>>>]
 [===========================]
-[<<<<< ChAMP.DMP START >>>>>]
------------------------------
-!!! Important !!! New Modification has been made on champ.DMP(): 
+[You may want to process DMR.GUI() or champ.GSEA() next.]
 
-    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
+<< Get DMR from overlapped probes >>
+<< Get DMR from overlapped probes >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Get adjusted P value for DMR >>
+<< Get Start-End Ranges for each DMR >>
+<< Calculate Methylation Scores for each DMR >>
+<< Generate Probe-level Data >>
+<< Calculate Methylation Scores for each DMR >>
+<< Generate Probe-level Data >>
+<< Generate DMR metadata >>
+<< Generate DMR metadata >>
+ProbeLasso detected 1 DMRs with P value <= 0.05.
 
-    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
+[ Section 2:  Run DMR Algorithm Done ]
 
---------------------------------
+[<<<<<< ChAMP.DMR END >>>>>>]
+[===========================]
+[You may want to process DMR.GUI() or champ.GSEA() next.]
 
-[ Section 1:  Check Input Pheno Start ]
+ProbeLasso detected 7 DMRs with P value <= 0.05.
 
-  You pheno is numeric type.
-    pheno parameter contains :100 values.
-    pheno parameter ranges from 0 to 1
+[ Section 2:  Run DMR Algorithm Done ]
 
-[ Section 1:  Check Input Pheno Done ]
+[<<<<<< ChAMP.DMR END >>>>>>]
+[===========================]
+[You may want to process DMR.GUI() or champ.GSEA() next.]
 
-
-[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
-
-  You have found 487 significant MVPs with a BH adjusted P-value below 0.001.
+  You have found 485512 significant MVPs with a BH adjusted P-value below 1.
 
 [ Section 2:  Find Numeric Vector Related CpGs Done ]
 
 
 [ Section 3:  Match Annotation Start ]
 
-  You have found 367 significant MVPs with a BH adjusted P-value below 0.001.
-
-[ Section 2:  Find Numeric Vector Related CpGs Done ]
-
-
-[ Section 3:  Match Annotation Start ]
-
 
 [ Section 3:  Match Annotation Done ]
 
@@ -98,3 +97,4 @@
 [===========================]
 [You may want to process DMP.GUI() or champ.GSEA() next.]
 
+<< Get closestProbe for each Probe >>
