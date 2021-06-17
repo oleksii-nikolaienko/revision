@@ -1,4 +1,3 @@
-Done!
 Fitting chr1...
 Fitting chr2...
 Fitting chr3...
@@ -98,3 +97,4 @@ loading from cache
 [1] "16:29:35 lmFit + comb-p 6"
 [1] "17:23:22 lmFit + comb-p 7"
 [1] "18:16:54 lmFit + comb-p 8"
+[1] "19:10:58 lmFit + comb-p 9"
