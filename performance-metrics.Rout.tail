@@ -1,26 +1,34 @@
-[bumphunterEngine] Found 1051 bumps.
-[bumphunterEngine] Computing regions for each bootstrap.
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Find DMR with Bumphunter Method >>
+1 cores will be used to do parallel Bumphunter computing.
+According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
+
+[bumphunterEngine] Computing marginal bootstrap p-values.
+[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
+[bumphunterEngine] Computing coefficients.
+[bumphunterEngine] Smoothing coefficients.
+[bumphunterEngine] Smoothing bootstrap coefficients.
 [bumphunterEngine] Performing 100 bootstraps.
-[bumphunterEngine] Performing 100 bootstraps.
-[bumphunterEngine] Computing marginal bootstrap p-values.
-[bumphunterEngine] Computing marginal bootstrap p-values.
-[bumphunterEngine] Smoothing bootstrap coefficients.
-[bumphunterEngine] Smoothing bootstrap coefficients.
-[bumphunterEngine] Computing marginal bootstrap p-values.
-[bumphunterEngine] Smoothing bootstrap coefficients.
-[bumphunterEngine] Computing marginal bootstrap p-values.
-[bumphunterEngine] Smoothing bootstrap coefficients.
-[bumphunterEngine] cutoff: 0.708
-[bumphunterEngine] Finding regions.
-[bumphunterEngine] cutoff: 0.707
-[bumphunterEngine] Finding regions.
-[bumphunterEngine] Found 1028 bumps.
-[bumphunterEngine] Computing regions for each bootstrap.
-[bumphunterEngine] Found 1061 bumps.
-[bumphunterEngine] Computing regions for each bootstrap.
 [bumphunterEngine] Estimating p-values and FWER.
 << Calculate DMR success. >>
-Bumphunter detected 54 DMRs with P value <= 0.05.
+Bumphunter detected 56 DMRs with P value <= 0.05.
 
 [ Section 2:  Run DMR Algorithm Done ]
 
@@ -47,21 +55,14 @@ Bumphunter detected 54 DMRs with P value <= 0.05.
 
 << Find DMR with Bumphunter Method >>
 1 cores will be used to do parallel Bumphunter computing.
+[bumphunterEngine] Estimating p-values and FWER.
+[bumphunterEngine] Computing marginal bootstrap p-values.
 According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
 
-[bumphunterEngine] cutoff: 0.702
-[bumphunterEngine] Finding regions.
 [bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
-[bumphunterEngine] Found 1089 bumps.
-[bumphunterEngine] Computing regions for each bootstrap.
 [bumphunterEngine] Computing coefficients.
 [bumphunterEngine] Smoothing coefficients.
-[bumphunterEngine] Performing 100 bootstraps.
-[bumphunterEngine] cutoff: 0.708
-[bumphunterEngine] Finding regions.
-[bumphunterEngine] Found 1065 bumps.
-[bumphunterEngine] Computing regions for each bootstrap.
-[bumphunterEngine] Estimating p-values and FWER.
+[bumphunterEngine] Smoothing bootstrap coefficients.
 << Calculate DMR success. >>
 Bumphunter detected 50 DMRs with P value <= 0.05.
 
@@ -90,11 +91,10 @@ Bumphunter detected 50 DMRs with P value <= 0.05.
 
 << Find DMR with Bumphunter Method >>
 1 cores will be used to do parallel Bumphunter computing.
+[bumphunterEngine] Performing 100 bootstraps.
 According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
 
 [bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
 [bumphunterEngine] Computing coefficients.
 [bumphunterEngine] Smoothing coefficients.
 [bumphunterEngine] Performing 100 bootstraps.
-[bumphunterEngine] Estimating p-values and FWER.
-[bumphunterEngine] Estimating p-values and FWER.
