@@ -1,72 +1,22 @@
-<< Get closestProbe for each Probe >>
-champ.DMR Results will be saved in ./CHAMP_ProbeLasso/
-<< Find DMR with ProbeLasso Method >>
-<< Get DMR from overlapped probes >>
-<< Get lassoQuantileThreshold for each featureCgi >>
-<< Get adjusted P value for DMR >>
-<< Get Start-End Ranges for each DMR >>
-<< Get expend ranges for each probe >>
-<< Calculate Methylation Scores for each DMR >>
-<< Generate Probe-level Data >>
-<< Generate DMR metadata >>
-<< Get lassoQuantileThreshold for each featureCgi >>
-<< Get expend ranges for each probe >>
-ProbeLasso detected 5 DMRs with P value <= 0.05.
-
-[ Section 2:  Run DMR Algorithm Done ]
-
-[<<<<<< ChAMP.DMR END >>>>>>]
-[===========================]
-[You may want to process DMR.GUI() or champ.GSEA() next.]
-
-<< Get DMR from overlapped probes >>
-<< Get adjusted P value for DMR >>
-<< Get Start-End Ranges for each DMR >>
-<< Calculate Methylation Scores for each DMR >>
-<< Generate Probe-level Data >>
-[===========================]
-[<<<<< ChAMP.DMP START >>>>>]
------------------------------
-!!! Important !!! New Modification has been made on champ.DMP(): 
-
-    (1): In this version champ.DMP() if your pheno parameter contains more than two groups of phenotypes, champ.DMP() would do pairewise differential methylated analysis between each pair of them. But you can also specify compare.group to only do comparasion between any two of them.
-
-    (2): champ.DMP() now support numeric as pheno, and will do linear regression on them. So covariates like age could be inputted in this function. You need to make sure your inputted "pheno" parameter is "numeric" type.
-
---------------------------------
-
-[ Section 1:  Check Input Pheno Start ]
-
-  You pheno is numeric type.
-    pheno parameter contains :100 values.
-    pheno parameter ranges from 0 to 1
-
-[ Section 1:  Check Input Pheno Done ]
-
-
-[ Section 2:  Find Numeric Covariates Linear Regression CpGs Start ]
-
-[===========================]
-[<<<<< ChAMP.DMR START >>>>>]
------------------------------
-!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
-
-[ Section 1:  Check Input Pheno Start ]
-
-<< Generate DMR metadata >>
-  You pheno is numeric type.
-    Your pheno information contains following groups. >>
-    <0>:99 samples.
-    <1>:1 samples.
-  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
-    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
-
-[ Section 1:  Check Input Pheno Done ]
-
-
 [ Section 2:  Run DMR Algorithm Start ]
 
-ProbeLasso detected 6 DMRs with P value <= 0.05.
+<< Find DMR with Bumphunter Method >>
+1 cores will be used to do parallel Bumphunter computing.
+According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
+
+[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
+[bumphunterEngine] Computing coefficients.
+[bumphunterEngine] Smoothing coefficients.
+[bumphunterEngine] Performing 100 bootstraps.
+[bumphunterEngine] Computing marginal bootstrap p-values.
+[bumphunterEngine] Smoothing bootstrap coefficients.
+[bumphunterEngine] Computing marginal bootstrap p-values.
+[bumphunterEngine] Smoothing bootstrap coefficients.
+[bumphunterEngine] Computing marginal bootstrap p-values.
+[bumphunterEngine] Smoothing bootstrap coefficients.
+[bumphunterEngine] Estimating p-values and FWER.
+<< Calculate DMR success. >>
+Bumphunter detected 51 DMRs with P value <= 0.05.
 
 [ Section 2:  Run DMR Algorithm Done ]
 
@@ -81,20 +31,70 @@ ProbeLasso detected 6 DMRs with P value <= 0.05.
 
 [ Section 1:  Check Input Pheno Start ]
 
-<< Get DMR from overlapped probes >>
-<< Get adjusted P value for DMR >>
-<< Get Start-End Ranges for each DMR >>
   You pheno is numeric type.
     Your pheno information contains following groups. >>
     <0>:99 samples.
     <1>:1 samples.
-  ProbeLasso Method can only be done between two phenotypes. So we need to do more check here...
-    Your pheno parameter contains extactly two phenotypes, which is good and compare.group is not needed, champ.DMR() would proceed with your whole data set.
 
 [ Section 1:  Check Input Pheno Done ]
 
 
 [ Section 2:  Run DMR Algorithm Start ]
 
-<< Calculate Methylation Scores for each DMR >>
-<< Generate Probe-level Data >>
+<< Find DMR with Bumphunter Method >>
+1 cores will be used to do parallel Bumphunter computing.
+According to your data set, champ.DMR() detected 23666 clusters contains MORE THAN 5 probes within1000 maxGap. These clusters will be used to find DMR.
+
+[bumphunterEngine] Computing marginal bootstrap p-values.
+[bumphunterEngine] Smoothing bootstrap coefficients.
+[bumphunterEngine] Using a single core (backend: doParallelMC, version: 1.0.16).
+[bumphunterEngine] Computing coefficients.
+[bumphunterEngine] Smoothing coefficients.
+[bumphunterEngine] Performing 100 bootstraps.
+[bumphunterEngine] cutoff: 0.715
+[bumphunterEngine] Finding regions.
+[bumphunterEngine] Found 969 bumps.
+[bumphunterEngine] Computing regions for each bootstrap.
+[bumphunterEngine] cutoff: 0.716
+[bumphunterEngine] Finding regions.
+[bumphunterEngine] Found 984 bumps.
+[bumphunterEngine] Computing regions for each bootstrap.
+[bumphunterEngine] Computing marginal bootstrap p-values.
+[bumphunterEngine] Smoothing bootstrap coefficients.
+[bumphunterEngine] cutoff: 0.712
+[bumphunterEngine] Finding regions.
+[bumphunterEngine] Found 977 bumps.
+[bumphunterEngine] Computing regions for each bootstrap.
+[bumphunterEngine] Estimating p-values and FWER.
+[bumphunterEngine] cutoff: 0.711
+[bumphunterEngine] Finding regions.
+[bumphunterEngine] Found 1044 bumps.
+[bumphunterEngine] Computing regions for each bootstrap.
+<< Calculate DMR success. >>
+Bumphunter detected 55 DMRs with P value <= 0.05.
+
+[ Section 2:  Run DMR Algorithm Done ]
+
+[<<<<<< ChAMP.DMR END >>>>>>]
+[===========================]
+[You may want to process DMR.GUI() or champ.GSEA() next.]
+
+[===========================]
+[<<<<< ChAMP.DMR START >>>>>]
+-----------------------------
+!!! important !!! We just upgrate champ.DMR() function, since now champ.DMP() could works on multiple phenotypes, but ProbeLasso can only works on one DMP result, so if your pheno parameter contains more than 2 phenotypes, and you want to use ProbeLasso function, you MUST specify compare.group=c("A","B"). Bumphunter and DMRcate should not be influenced.
+
+[ Section 1:  Check Input Pheno Start ]
+
+  You pheno is numeric type.
+    Your pheno information contains following groups. >>
+    <0>:99 samples.
+    <1>:1 samples.
+
+[ Section 1:  Check Input Pheno Done ]
+
+
+[ Section 2:  Run DMR Algorithm Start ]
+
+<< Find DMR with Bumphunter Method >>
+1 cores will be used to do parallel Bumphunter computing.
