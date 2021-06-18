@@ -432,3 +432,32 @@
 [1] "21:58:23 ramr (beta) 6"
 [1] "21:58:58 ramr (beta) 7"
 [1] "21:59:32 ramr (beta) 8"
+[1] "22:00:07 ramr (beta) 9"
+[1] "22:00:41 ramr (beta) 10"
+[1] "22:01:16 ramr (wbeta) 1.30102999566398"
+[1] "22:02:06 ramr (wbeta) 2"
+[1] "22:02:54 ramr (wbeta) 3"
+[1] "22:03:41 ramr (wbeta) 4"
+[1] "22:04:27 ramr (wbeta) 5"
+[1] "22:05:14 ramr (wbeta) 6"
+[1] "22:06:01 ramr (wbeta) 7"
+[1] "22:06:47 ramr (wbeta) 8"
+[1] "22:07:33 ramr (wbeta) 9"
+[1] "22:08:20 ramr (wbeta) 10"
+[1] "22:09:07 ramr (IQR) 1.3"
+[1] "22:09:24 ramr (IQR) 2"
+[1] "22:09:39 ramr (IQR) 3"
+[1] "22:09:55 ramr (IQR) 4"
+[1] "22:10:10 ramr (IQR) 5"
+[1] "22:10:26 ramr (IQR) 6"
+[1] "22:10:41 ramr (IQR) 7"
+[1] "22:10:57 ramr (IQR) 8"
+[1] "22:11:12 ramr (IQR) 9"
+[1] "22:11:28 ramr (IQR) 10"
+[1] "Fri Jun 18 22:11:43 2021"
+> deltas <- names(results[[1]])
++   x <- unname(x); lib=x[1]; delta=x[2]; cutoff=x[3]
++       results.table[results.table$lib==lib & results.table$delta==delta,"uAuPR"] <- abs( pracma::trapz(c(pr.auc.data$uRecall[1], pr.auc.data$uRecall, 0), c(0, pr.auc.data$uPrecision, pr.auc.data$uPrecision[nrow(pr.auc.data)])) )
++       results.table[results.table$lib==lib & results.table$delta==delta,"uAuROC"] <- abs( pracma::trapz(c(1, auc.data$tFPR, auc.data$tFPR[nrow(auc.data)]), c(auc.data$uRecall[1], auc.data$uRecall, 0)) )
++       results.table[results.table$lib==lib & results.table$delta==delta,"nAuPR"] <- abs( pracma::trapz(c(pr.auc.data$nRecall[1], pr.auc.data$nRecall, 0), c(0, pr.auc.data$nPrecision, pr.auc.data$nPrecision[nrow(pr.auc.data)])) )
++       results.table[results.table$lib==lib & results.table$delta==delta,"nAuROC"] <- abs( pracma::trapz(c(1, auc.data$tFPR, auc.data$tFPR[nrow(auc.data)]), c(auc.data$nRecall[1], auc.data$nRecall, 0)) )

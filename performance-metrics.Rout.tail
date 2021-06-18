@@ -1,100 +1,100 @@
-Fitting chr16...
-Fitting chr18...
-Fitting chr17...
-Fitting chr19...
-Fitting chr12...
-Fitting chr18...
-Fitting chr13...
-Fitting chr20...
-Fitting chr19...
-loading from cache
-Fitting chr21...
-Fitting chr22...
-Fitting chr14...
-Fitting chrX...
-Fitting chr20...
-Fitting chr15...
-Fitting chr21...
-Fitting chr22...
-Fitting chrY...
-Fitting chr16...
-Fitting chrX...
-Demarcating regions...
-Done!
-Fitting chr17...
-Fitting chrY...
-Demarcating regions...
-Done!
-Fitting chr18...
-Fitting chr19...
-Fitting chr20...
-Fitting chr21...
-Fitting chr22...
-Fitting chrX...
-Fitting chrY...
-Demarcating regions...
-Done!
-snapshotDate(): 2021-05-18
-see ?DMRcatedata and browseVignettes('DMRcatedata') for documentation
-snapshotDate(): 2021-05-18
-see ?DMRcatedata and browseVignettes('DMRcatedata') for documentation
-loading from cache
-loading from cache
-snapshotDate(): 2021-05-18
-see ?DMRcatedata and browseVignettes('DMRcatedata') for documentation
-loading from cache
-Fitting chr1...
-Fitting chr2...
-Fitting chr3...
-Fitting chr4...
-Fitting chr5...
-Fitting chr6...
-Fitting chr7...
-Fitting chr8...
-Fitting chr9...
-Fitting chr10...
-Fitting chr11...
-Fitting chr12...
-Fitting chr13...
-Fitting chr14...
-Fitting chr15...
-Fitting chr16...
-Fitting chr17...
-Fitting chr18...
-Fitting chr19...
-Fitting chr20...
-Fitting chr21...
-Fitting chr22...
-Fitting chrX...
-Fitting chrY...
-Demarcating regions...
-Done!
-snapshotDate(): 2021-05-18
-see ?DMRcatedata and browseVignettes('DMRcatedata') for documentation
-loading from cache
-[1] "12:55:41 lmFit + comb-p 1.30102999566398"
-[1] "13:50:13 lmFit + comb-p 2"
-[1] "14:44:23 lmFit + comb-p 3"
-[1] "15:38:44 lmFit + comb-p 4"
-[1] "16:32:19 lmFit + comb-p 5"
-[1] "17:26:08 lmFit + comb-p 6"
-[1] "18:20:08 lmFit + comb-p 7"
-[1] "19:13:54 lmFit + comb-p 8"
-[1] "20:08:00 lmFit + comb-p 9"
-[1] "21:01:42 lmFit + comb-p 10"
-[1] "21:55:28 ramr (beta) 1.30102999566398"
-Identifying AMRs [28.981s]
-[1] "21:56:04 ramr (beta) 2"
-Identifying AMRs [28.041s]
-[1] "21:56:39 ramr (beta) 3"
-Identifying AMRs [27.734s]
-[1] "21:57:14 ramr (beta) 4"
-Identifying AMRs [27.673s]
-[1] "21:57:48 ramr (beta) 5"
-Identifying AMRs [27.651s]
-[1] "21:58:23 ramr (beta) 6"
-Identifying AMRs [27.614s]
-[1] "21:58:58 ramr (beta) 7"
-Identifying AMRs [27.640s]
-[1] "21:59:32 ramr (beta) 8"
-Identifying AMRs [27.579s]
+null device 
+          1 
+> # do.call("grid.arrange", c(plots, ncol=2, nrow=3))
+> 
+> 
+> 
+> #
+> # pr.auc.data <- na.omit(results.table[results.table$lib==lib,])
+> # ggplot(data=pr.auc.data, aes(x=rPrecision, y=rRecall, color=factor(delta), group=factor(delta), shape=factor(delta))) +
+> #   geom_point() +
+> #   geom_line(alpha=0.5)
+> 
+> # library(bumphunter)
+> # library(methylKit)
+> # library(DMRcate)
+> 
+> # library(PRROC)
+> # pr <- pr.curve(scores.class0 = results.table[results.table$lib=="ramr-beta","rPrecision"], scores.class1 = results.table[results.table$lib=="ramr-beta","rRecall"], curve = T)
+> # plot(pr)
+> 
+> # # ChAMP
+> # library(ChAMP)
+> # champ.dmr.probelasso <- champ.DMR(beta=betas, pheno=design[,i], minProbes=min.cpgs, adjPvalDmr=0.01, cores=cores, method="ProbeLasso", minDmrSep=merge.window, PDFplot=FALSE, Rplot=FALSE)
+> # # f-ing slow and gives many FN: champ.dmr.bumphunter <- champ.DMR(beta=betas, pheno=design[,i], minProbes=min.cpgs, adjPvalDmr=0.01, cores=cores, method="Bumphunter", maxGap=merge.window)
+> # # doesn't work at all: champ.dmr.dmrcate    <- champ.DMR(beta=betas, pheno=design[,i], minProbes=min.cpgs, adjPvalDmr=0.01, cores=cores, method="DMRcate")
+> #
+> # champ.dmp <- champ.DMP(beta=betas, pheno=design[,i], adjPVal=0.01)
+> # champ.dmp$NumericVariable$CHR <- paste0("chr",champ.dmp$NumericVariable$CHR)
+> # champ.dmp.ranges <- makeGRangesFromDataFrame(champ.dmp$NumericVariable, seqnames.field="CHR", start.field="MAPINFO", end.field="MAPINFO", keep.extra.columns=TRUE, ignore.strand=TRUE)
+> # champ.dmp.ranges <- getUniverse(champ.dmp.ranges, min.cpgs=min.cpgs, merge.window=merge.window)
+> 
+> # # bumphunter - gives boolshit
+> # chr   <- as.character(seqnames(simulated.ranges))
+> # pos   <- start(simulated.ranges)
+> # univ  <- getUniverse(simulated.ranges, min.cpgs=min.cpgs, merge.window=merge.window)
+> # clust <- rep(0,length(simulated.ranges))
+> # for (cid in c(1:length(univ)))
+> #   clust[unlist(univ[cid]$revmap)] <- cid
+> #
+> # bumps <- bumphunter::bumphunter(object=betas, design=design, chr=chr, pos=pos, coef=1, cutoff=0.99, maxgap=merge.window) #, cluster=clust
+> # bumps.ranges <- makeGRangesFromDataFrame(bumps$table, keep.extra.columns=TRUE, ignore.strand=TRUE)
+> # bumps.ranges <- getUniverse(bumps.ranges, min.cpgs=1, merge.window=merge.window)
+> # sum(countOverlaps(bumps.ranges, modified.regions))
+> 
+> # # methylKit - too difficult
+> 
+> # # DMRcate - can't get it to work... apparently because need more samples in a group, can't do one-to-many
+> # cpg.ann <- cpg.annotate(datatype="array", object=betas, what="Beta", arraytype="450K", analysis.type="differential", design=design, coef=2, fdr=0.05)
+> # cpg.dmr <- dmrcate(cpg.ann)
+> # betas.safe <- betas
+> # betas.safe[betas.safe==1] <- 1-.Machine$double.xmin
+> # betas.safe[betas.safe==0] <- .Machine$double.xmin
+> # mvalues <- log(betas.safe/(1-betas.safe))
+> # cpg.ann <- cpg.annotate(datatype="array", object=betas.safe, analysis.type="differential", design=design, coef=2, fdr=0.05)
+> # cpg.dmr <- dmrcate(cpg.ann)
+> 
+> # # comb-p
+> # betas.safe <- betas
+> # betas.safe[betas.safe==1] <- 1-.Machine$double.xmin
+> # betas.safe[betas.safe==0] <- .Machine$double.xmin
+> # mvalues <- log(betas.safe/(1-betas.safe))
+> # fit <- lmFit(mvalues, design[,i])
+> # fit <- eBayes(fit)
+> # # topTable(fit,p.value=1e-03)
+> # rownames(betas[unlist(modified.regions[i]$revmap),i,drop=FALSE])
+> # mvalues[c(rownames(betas[unlist(modified.regions[i]$revmap),i,drop=FALSE])),]
+> # mvalues.select <- mvalues[c(rownames(betas[unlist(modified.regions[i]$revmap),i,drop=FALSE])),]
+> # fit.data <- data.frame(value=mvalues.select[1,], design=design[,i])
+> # system.time(p.values <- apply(mvalues[1:100,], 1, function (x) {
+> #   fit<-lm.fit(design[,i,drop=FALSE],x)
+> #   pf(fit$fitted.values[i], 1, fit$df.residual-1, lower.tail=F)
+> # }))
+> # system.time(p.values <- apply(mvalues.select, 1, function (x) {
+> #   lm.fit(cbind(1,design[,i,drop=FALSE]),x)
+> # }))
+> 
+> 
+> # plots.utp <- ggplot(data=results.table, aes(x=-log10(cutoff), y=uTP, color=factor(delta), group=factor(delta), shape=factor(delta))) +
+> #   geom_point() +
+> #   geom_line(alpha=0.5) +
+> #   scale_x_continuous(breaks=round(cutoffs,1)) +
+> #   theme(legend.position="none") +
+> #   facet_wrap(~lib)
+> # plots.ntp <- ggplot(data=results.table, aes(x=-log10(cutoff), y=nTP, color=factor(delta), group=factor(delta), shape=factor(delta))) +
+> #   geom_point() +
+> #   geom_line(alpha=0.5) +
+> #   scale_x_continuous(breaks=round(cutoffs,1)) +
+> #   theme(legend.position="none") +
+> #   facet_wrap(~lib)
+> # plots.tfp <- ggplot(data=results.table, aes(x=-log10(cutoff), y=tFP, color=factor(delta), group=factor(delta), shape=factor(delta))) +
+> #   geom_point() +
+> #   geom_line(alpha=0.5) +
+> #   scale_x_continuous(breaks=round(cutoffs,1)) +
+> #   theme(legend.position="bottom") +
+> #   facet_wrap(~lib)
+> # grid.arrange(plots.utp,plots.ntp,plots.tfp, ncol=1)
+> 
+> proc.time()
+      user     system    elapsed 
+2070181.00   84046.87  450705.54 
